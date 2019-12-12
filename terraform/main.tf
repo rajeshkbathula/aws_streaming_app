@@ -1,11 +1,24 @@
+provider "aws" {
+  version = "~> 2.0"
+  region  = "eu-west-1"
+}
+
+terraform {
+  backend "s3" {}
+  required_version = "~> 0.12.18"
+}
+
+
+
+
 locals {
   common_tags = {
     owner = "pravallika"
     email = "pravs2017@gmail.com"
     costcentre = ""
     project = "streaming-app"
-    live = "no"
-    environment = "pravs"
+    live = var.live
+    environment = var.env
     technical_contact = "pravallika"
   }
 }

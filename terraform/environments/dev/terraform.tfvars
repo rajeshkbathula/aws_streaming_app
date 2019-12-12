@@ -1,4 +1,4 @@
 # Account
 live = "no"
 
-env = "pravs"
+env = "dev"
