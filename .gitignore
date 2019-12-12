@@ -1,0 +1,28 @@
+.DS_Store
+.idea
+_pycache_
+.envrc
+*.iml
+trial*
+.pytest*
+.env
+.vscode
+env
+venv
+.tool-versions
+build_target
+
+## Remove Local .terraform directories
+*/.terraform/
+.terraform/
+
+# Byte-compiled / optimized / DLL files
+_pycache_/
+*.py[cod]
+
+# Do not track Python virtual environments
+*/v-env/
+
+## Temporary lambda zips
+/src/tmp_zip/
+build_target
