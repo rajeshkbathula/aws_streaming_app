@@ -14,6 +14,11 @@ resource "aws_s3_bucket" "source" {
   acl    = "private"
   tags = local.common_tags
 }
+resource "aws_s3_bucket" "source" {
+  bucket = "streaming-app-${local.common_tags.environment}-tgt"
+  acl    = "private"
+  tags = local.common_tags
+}
 
 
 
