@@ -1,7 +1,7 @@
 version: 2
 
 work_dir: &work_dir
-            ~/repo/clickstream
+            ~/repo/aws_streaming_app
 
 jobs:
   DEV-DEPLOYMENT:
