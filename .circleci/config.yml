@@ -40,3 +40,13 @@ jobs:
             make init
             make plan
             make apply
+
+
+workflows:
+  version: 2
+  main:
+    jobs:
+    - DEV-DEPLOYMENT:
+        filters:
+          branches:
+            only: master
