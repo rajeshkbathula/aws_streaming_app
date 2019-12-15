@@ -1,13 +1,13 @@
 version: 2
 
 work_dir: &work_dir
-            ~/repo/aws_streaming_app
-
+            ~/repo
 jobs:
   DEV-DEPLOYMENT:
     machine:
       image: ubuntu-1604:201903-01
     working_directory: ~/repo
+    steps:
       - checkout:
           path: ~/repo
       - run:
