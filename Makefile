@@ -2,7 +2,8 @@ init:
 	cd terraform/environments/$(env) && rm -rf .terraform/
 	cd terraform\environments\$(env) && terraform init -backend=true -backend-config=backend.tfvars ../..
 
-
+fmt:
+	cd terraform/ && terraform fmt -recursive
 
 # Use this only in case the state file is corrupted
 refresh: check-vars init
